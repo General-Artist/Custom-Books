@@ -1,4 +1,3 @@
-say "hello"
 data modify storage cb_book_author author set from entity @s equipment.offhand.components.minecraft:writable_book_content.pages[0].raw
 data modify storage cb_book_author title set from entity @s equipment.offhand.components.minecraft:writable_book_content.pages[1].raw
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:written_book"}}] run data modify storage cb_book_author pages set from entity @s SelectedItem.components.minecraft:written_book_content.pages
